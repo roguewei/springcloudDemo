@@ -153,9 +153,7 @@
       <if test="dname != null" >
         dname,
       </if>
-      <if test="dbsource != null" >
         dbSource,
-      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="deptno != null" >
@@ -164,9 +162,7 @@
       <if test="dname != null" >
         #{dname,jdbcType=VARCHAR},
       </if>
-      <if test="dbsource != null" >
         DATABASE()
-      </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.winston.springcloud.entities.DeptExample" resultType="java.lang.Integer" >
