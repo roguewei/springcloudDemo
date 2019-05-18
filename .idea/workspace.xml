@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab393ece-8d42-4bb9-ade2-e689bc305eb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/microservicecloud-consumer-dept-80/microservicecloud-consumer-dept-80.iml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-consumer-dept-80/microservicecloud-consumer-dept-80.iml" afterDir="false" />
-    </list>
+    <list default="true" id="ab393ece-8d42-4bb9-ade2-e689bc305eb5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/microservicecloud-api/target/" />
@@ -123,6 +121,12 @@
       </expand>
       <select />
     </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -302,7 +306,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558086740126" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558142421996" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -374,12 +378,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558073773874</updated>
-      <workItem from="1558073780057" duration="12915000" />
+      <workItem from="1558073780057" duration="13923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="497000" />
+    <option name="totallyTimeSpent" value="1505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
