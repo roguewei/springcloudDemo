@@ -25,3 +25,13 @@ spring:
       max-total: 5
       # 等待连接获取的最大超时时间
       max-wait-millis: 200
+eureka:
+  # 客户端注册进eureka服务列表
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    # eureka服务器页面显示的id别名
+    instance-id: cloud-dept8001
+    # eureka服务器页面显示IP地址
+    prefer-ip-address: true
