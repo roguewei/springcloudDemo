@@ -35,3 +35,10 @@ eureka:
     instance-id: cloud-dept8001
     # eureka服务器页面显示IP地址
     prefer-ip-address: true
+
+# eureka中鼠标点击服务名称跳转的链接信息
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

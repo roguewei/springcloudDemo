@@ -38,4 +38,9 @@ public class DeptController_Consumer {
         return restTemplate.postForObject(REST_URL_PERFIX+"/dept", dept, Boolean.class);
     }
 
+    @GetMapping("/discovery")
+    public Object discovery(){
+        return restTemplate.getForObject(REST_URL_PERFIX+"/dept/discovery", Object.class);
+    }
+
 }
