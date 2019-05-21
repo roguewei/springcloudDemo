@@ -18,7 +18,8 @@ import java.util.List;
 @RequestMapping("/consumer")
 public class DeptController_Consumer {
 
-    private static final String REST_URL_PERFIX = "http://localhost:8001";
+//    private static final String REST_URL_PERFIX = "http://localhost:8001";
+    private static final String REST_URL_PERFIX = "http://MICROSERVICECLOUD-DEPT";
 
     @Autowired
     private RestTemplate restTemplate;

@@ -25,3 +25,8 @@ spring:
       max-total: 5
       # 等待连接获取的最大超时时间
       max-wait-millis: 200
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
