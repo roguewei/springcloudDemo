@@ -20,6 +20,7 @@ public class MySelfRule{
 
     @Bean
     public IRule myRule(){
+//        return new RandomRule();
         return new RandomRule_NEW();
     }
 
