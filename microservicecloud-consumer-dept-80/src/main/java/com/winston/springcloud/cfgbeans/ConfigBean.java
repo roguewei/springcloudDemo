@@ -1,5 +1,8 @@
 package com.winston.springcloud.cfgbeans;
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
+import com.netflix.loadbalancer.RoundRobinRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,6 +31,19 @@ public class ConfigBean {
     @LoadBalanced
     public RestTemplate restTemplate(){
         return new RestTemplate();
+    }
+
+    /**
+      * @Author Winston
+      * @Description 覆盖ribbon原有的轮询算法
+      * @Date 10:15 2019/5/21
+      * @Param
+      * @return
+      **/
+    @Bean
+    public IRule myRule(){
+        // 用重新选择的随机算法替代默认的轮询
+        return new RandomRule();
     }
 
 }
