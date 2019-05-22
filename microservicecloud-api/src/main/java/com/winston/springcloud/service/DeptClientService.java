@@ -6,8 +6,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-// 本接口仅访问名称为MICROSERVICECLOUD-DEPT的微服务
-@FeignClient(value = "MICROSERVICECLOUD-DEPT")
+// @FeignClient注明本接口仅访问名称为MICROSERVICECLOUD-DEPT的微服务
+//@FeignClient(value = "MICROSERVICECLOUD-DEPT")
+
+// 添加熔断处理，本接口中任何方法出了问题都用 DeptClientServiceFallbackFactory 处理
+@FeignClient(value = "MICROSERVICECLOUD-DEPT", fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
     @PostMapping("/dept/add")
