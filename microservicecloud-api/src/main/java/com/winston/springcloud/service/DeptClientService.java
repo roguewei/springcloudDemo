@@ -2,22 +2,21 @@ package com.winston.springcloud.service;
 
 import com.winston.springcloud.entities.Dept;
 import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// 本接口仅访问名称为MICROSERVICECLOUD-DEPT的微服务
 @FeignClient(value = "MICROSERVICECLOUD-DEPT")
 public interface DeptClientService {
 
-    @PostMapping
+    @RequestMapping(value = "/dept/add", method = RequestMethod.POST)
     boolean add(Dept dept);
 
-    @GetMapping(value = "/{id}")
+    @RequestMapping(value = "/dept/{id}", method = RequestMethod.GET)
     Dept get(@PathVariable("id") Long id);
 
-    @GetMapping
+    @GetMapping("/dept")
     List<Dept> list();
 
 }

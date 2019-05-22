@@ -1,0 +1,9 @@
+com\winston\springcloud\entities\DeptExample$Criterion.class
+com\winston\springcloud\entities\Dept.class
+com\winston\springcloud\entities\Dept2.class
+com\winston\springcloud\mapper\DeptMapper.class
+com\winston\springcloud\entities\DeptExample$Criteria.class
+com\winston\springcloud\entities\DeptExample$GeneratedCriteria.class
+com\winston\springcloud\config\DBConfig.class
+com\winston\springcloud\service\DeptClientService.class
+com\winston\springcloud\entities\DeptExample.class
