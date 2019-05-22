@@ -10,10 +10,10 @@ import java.util.List;
 @FeignClient(value = "MICROSERVICECLOUD-DEPT")
 public interface DeptClientService {
 
-    @RequestMapping(value = "/dept/add", method = RequestMethod.POST)
+    @PostMapping("/dept/add")
     boolean add(Dept dept);
 
-    @RequestMapping(value = "/dept/{id}", method = RequestMethod.GET)
+    @GetMapping("/dept/{id}")
     Dept get(@PathVariable("id") Long id);
 
     @GetMapping("/dept")

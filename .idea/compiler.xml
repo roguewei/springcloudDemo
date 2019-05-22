@@ -15,6 +15,7 @@
         <module name="microservicecloudeureka7003" />
         <module name="microservicecloudproviderdept8002" />
         <module name="microservicecloudproviderdept8003" />
+        <module name="microservicecloudproviderdepthystrix8004" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +29,7 @@
       <module name="microservicecloudeureka7003" target="1.8" />
       <module name="microservicecloudproviderdept8002" target="1.8" />
       <module name="microservicecloudproviderdept8003" target="1.8" />
+      <module name="microservicecloudproviderdepthystrix8004" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

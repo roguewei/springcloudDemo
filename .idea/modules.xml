@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/microservicecloud-eureka-7003/microservicecloudeureka7003.iml" filepath="$PROJECT_DIR$/microservicecloud-eureka-7003/microservicecloudeureka7003.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicecloud-provider-dept-8002/microservicecloudproviderdept8002.iml" filepath="$PROJECT_DIR$/microservicecloud-provider-dept-8002/microservicecloudproviderdept8002.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicecloud-provider-dept-8003/microservicecloudproviderdept8003.iml" filepath="$PROJECT_DIR$/microservicecloud-provider-dept-8003/microservicecloudproviderdept8003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservicecloud-provider-dept-hystrix-8004/microservicecloudproviderdepthystrix8004.iml" filepath="$PROJECT_DIR$/microservicecloud-provider-dept-hystrix-8004/microservicecloudproviderdepthystrix8004.iml" />
     </modules>
   </component>
 </project>

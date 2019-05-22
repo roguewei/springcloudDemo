@@ -41,7 +41,7 @@ eureka:
 
 # eureka中鼠标点击服务名称跳转的链接信息
 info:
-  app.name: atguigu-microservicecloud
-  company.name: www.atguigu.com
+  app.name: winston-microservicecloud
+  company.name: www.winston.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
