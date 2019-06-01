@@ -47,11 +47,14 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
+        <!-- hystrix -->
+
+        <!-- 服务监控 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
         </dependency>
-        <!-- hystrix -->
+        <!-- 服务监控 -->
     </dependencies>
 
 </project>

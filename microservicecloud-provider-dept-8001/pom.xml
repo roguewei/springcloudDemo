@@ -37,7 +37,7 @@
         </dependency>
         <!-- 热部署 -->
 
-        <!-- eureka中鼠标点击服务名称跳转的链接信息 -->
+        <!-- eureka中鼠标点击服务名称跳转的链接信息，监控信息完善 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>

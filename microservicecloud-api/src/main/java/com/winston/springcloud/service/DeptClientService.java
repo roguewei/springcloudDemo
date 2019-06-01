@@ -13,6 +13,14 @@ import java.util.List;
 @FeignClient(value = "MICROSERVICECLOUD-DEPT", fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
+    /**
+      * @Author Winston
+      * @Description 接口方式实现微服务负载均衡
+      * 该方法表明调用服务名为MICROSERVICECLOUD-DEPT下的/dept/add服务
+      * @Date 9:31 2019/5/28
+      * @Param
+      * @return
+      **/
     @PostMapping("/dept/add")
     boolean add(Dept dept);
 

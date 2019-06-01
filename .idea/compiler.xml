@@ -11,12 +11,12 @@
         <module name="microservicecloud-consumer-dept-feign" />
         <module name="microservicecloud-consumer-dept-hystrix-dashboard" />
         <module name="microservicecloud-eureka-7001" />
+        <module name="microservicecloud-eureka-7002" />
+        <module name="microservicecloud-eureka-7003" />
         <module name="microservicecloud-provider-dept-8001" />
-        <module name="microservicecloudeureka7002" />
-        <module name="microservicecloudeureka7003" />
-        <module name="microservicecloudproviderdept8002" />
-        <module name="microservicecloudproviderdept8003" />
-        <module name="microservicecloudproviderdepthystrix8004" />
+        <module name="microservicecloud-provider-dept-8002" />
+        <module name="microservicecloud-provider-dept-8003" />
+        <module name="microservicecloud-provider-dept-hystrix-8004" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,12 +26,12 @@
       <module name="microservicecloud-consumer-dept-feign" target="1.8" />
       <module name="microservicecloud-consumer-dept-hystrix-dashboard" target="1.8" />
       <module name="microservicecloud-eureka-7001" target="1.8" />
+      <module name="microservicecloud-eureka-7002" target="1.8" />
+      <module name="microservicecloud-eureka-7003" target="1.8" />
       <module name="microservicecloud-provider-dept-8001" target="1.8" />
-      <module name="microservicecloudeureka7002" target="1.8" />
-      <module name="microservicecloudeureka7003" target="1.8" />
-      <module name="microservicecloudproviderdept8002" target="1.8" />
-      <module name="microservicecloudproviderdept8003" target="1.8" />
-      <module name="microservicecloudproviderdepthystrix8004" target="1.8" />
+      <module name="microservicecloud-provider-dept-8002" target="1.8" />
+      <module name="microservicecloud-provider-dept-8003" target="1.8" />
+      <module name="microservicecloud-provider-dept-hystrix-8004" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

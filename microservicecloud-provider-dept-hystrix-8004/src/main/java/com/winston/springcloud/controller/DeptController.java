@@ -37,7 +37,7 @@ public class DeptController {
     // 指向下方的熔断器回调方法
     // 一旦调用服务方法失败并抛出了错误信息后，会自动调用@HystrixCommand标注好的fallbackMethod调用类的指定方法
     // 高度耦合的方式，即添加@HystrixCommand(fallbackMethod = "process_Get")和相应方法
-//    @HystrixCommand(fallbackMethod = "process_Get")
+    @HystrixCommand(fallbackMethod = "process_Get")
     public Dept getById(@PathVariable("id") Long id){
         Dept dept = deptService.get(id);
         if(dept==null){
@@ -46,21 +46,21 @@ public class DeptController {
         return deptService.get(id);
     }
 
-//    /**
-//      * @Author Winston
-//      * @Description 高度耦合的方式
-//      * hystrix熔断器返回方法
-//      * @Date 14:35 2019/5/22
-//      * @Param
-//      * @return
-//      **/
-//    public Dept process_Get(@PathVariable("id")Long id){
-//        Dept dept = new Dept();
-//        dept.setDeptno(id);
-//        dept.setDname("该id:"+id+"没有对应信息");
-//        dept.setDbsource("no this database in mysql");
-//        return dept;
-//    }
+    /**
+      * @Author Winston
+      * @Description 高度耦合的方式
+      * hystrix熔断器返回方法
+      * @Date 14:35 2019/5/22
+      * @Param
+      * @return
+      **/
+    public Dept process_Get(@PathVariable("id")Long id){
+        Dept dept = new Dept();
+        dept.setDeptno(id);
+        dept.setDname("该id:"+id+"没有对应信息");
+        dept.setDbsource("no this database in mysql");
+        return dept;
+    }
 
     @PostMapping
     public boolean add(@RequestBody Dept dept){
