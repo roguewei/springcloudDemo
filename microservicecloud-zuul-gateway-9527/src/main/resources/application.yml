@@ -32,3 +32,17 @@ eureka:
   instance:
     instance-id: gateway-9527.com
     prefer-ip-address: true
+
+# 未添加zuul访问映射时，访问的网址是真是的，例如：http://myzuul.com:9527/microservicecloud-dept/dept/1
+zuul:
+  routes:
+    # 添加了zuul访问映射时，访问的网址变为映射的虚拟网址，例如：http://myzuul.com:9527/mydept/dept/1
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+  # 添加ignored-services，表明忽略此访问路径，即不能使用该服务名来访问，转而用映射的虚拟网址来访问
+  # 第一种，表示忽略一个真实访问服务名
+#  ignored-services: microservicecloud-dept
+  # 第二，批处理，所有真实访问服务名都忽略
+  ignored-services: "*"
+  # 访问前缀，访问网址变成http://myzuul.com:9527/winston/mydept/dept/1
+  prefix: /winston
