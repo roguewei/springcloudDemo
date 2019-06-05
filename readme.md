@@ -1,0 +1,2 @@
+application.yml是用户级的资源配置项
+bootstrap.yml是系统级的，优先级更高
