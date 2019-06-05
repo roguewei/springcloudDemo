@@ -1,13 +1,12 @@
 ##ignore this file##
 /target/
 
-.gitignore
 .classpath
 .project
 .settings
-##filter databfile、sln file##
-*.mdb
+ ##filter databfile、sln file##
 *.iml
+*.mdb
 *.ldb
 *.sln
 ##class file##
