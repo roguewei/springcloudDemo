@@ -5,6 +5,7 @@
 .project
 .settings      
  ##filter databfile、sln file##
+ *.iml
 *.mdb  
 *.ldb  
 *.sln    
