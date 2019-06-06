@@ -1,0 +1,21 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: microservicecloud-config
+  # 方式一：ssh连接：如果ssh出现clone代码拿不下来，说明git没有配置连接，需要在本地添加sshkey
+  # 参考https://blog.csdn.net/sxg0205/article/details/81412921
+  # https://blog.csdn.net/weixin_41010198/article/details/81062153
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: git@github.com:roguewei/microservicecloud-config.git
+#          username: roguewei
+#          password: 00000.wei
+  # 方式二：http连接，公开库可以直接连接，不需要用户名密码
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/roguewei/microservicecloud-config.git

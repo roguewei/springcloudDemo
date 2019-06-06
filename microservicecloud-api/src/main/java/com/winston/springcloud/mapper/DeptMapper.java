@@ -2,9 +2,8 @@ package com.winston.springcloud.mapper;
 
 import com.winston.springcloud.entities.Dept;
 import com.winston.springcloud.entities.DeptExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface DeptMapper {
     /**
